@@ -3,57 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hafta 1: Proje Başlatma ve Analiz | Emlak Satış Otomasyonu</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Hafta 1: Proje Başlatma ve Planlama | Emlak Satış Otomasyonu</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <header>
+<body class="detail-page">
+    <header class="detail-header">
         <div class="container">
             <h1>Emlak Satış Otomasyonu</h1>
-            <p class="subtitle">Haftalık İlerleme Raporu</p>
+            <p class="subtitle">Sistem Analizi ve Tasarımı - Dönem Projesi</p>
         </div>
     </header>
 
     <main class="container">
-        <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Ana Sayfaya Dön</a>
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Ana Sayfaya Dön</a>
         
-        <article>
-            <h1>Hafta 1: Proje Başlatma ve Gereksinim Analizi</h1>
-            <div class="report-meta">Tarih: 10 Mart 2026 | Hazırlayan: Yunus Emre Beyaz</div>
+        <article class="report-article">
+            <h1 class="article-title">Hafta 1: Proje Fikrinin Belirlenmesi ve Planlama</h1>
+            <div class="report-meta">
+                <span><i class="far fa-calendar-alt"></i> 10 Mart 2026</span>
+                <span><i class="far fa-user"></i> Hazırlayan: Yunus Emre Beyaz</span>
+                <span><i class="fas fa-hashtag"></i> V1.0</span>
+            </div>
             
-            <section>
-                <h2><i class="fas fa-tasks"></i> Bu Hafta Yapılanlar</h2>
+            <section class="content-section">
+                <h2><i class="fas fa-tasks"></i> Bu Hafta Yapılanlar (Proje Özeti ve Problem Tanımı)</h2>
+                <p>Bu hafta projenin temel sınırları çizilmiş ve mevcut durum analizi yapılmıştır. Temel çıktılar şunlardır:</p>
                 <ul>
-                    <li>Proje konusu "Emlak Satış Otomasyonu" olarak netleştirildi.</li>
-                    <li>Geliştirme ortamı kuruldu (Java Development Kit ve MySQL Server).</li>
-                    <li>Temel kullanıcı gereksinimleri taslak olarak çıkarıldı.</li>
+                    <li><strong>Projenin Amacı:</strong> Emlak ilanlarının dijital ortamda merkezi bir veritabanı ile yönetilmesini sağlamak; alıcı ve satıcı arasındaki iletişim sürecini hızlandırarak veri karmaşasını önlemektir [cite: 11-12].</li>
+                    <li><strong>Mevcut Durum Analizi:</strong> Geleneksel yöntemlerdeki ilan takibi zorluğu ve güncel olmayan ilanların yarattığı zaman kaybı tespit edilmiştir[cite: 13].</li>
+                    <li><strong>Problem İfadesi:</strong> "Gayrimenkul danışmanları ve konut arayan kullanıcılar, ilanların manuel yöntemlerle veya dağınık platformlarla yönetilmesi nedeniyle veri güncelliğini takip edememe ve hızlı karar verememe problemi yaşamaktadır; bu durum zaman kaybına, hatalı fiyatlandırmalara ve ticari verimliliğin düşmesine yol açmaktadır." [cite: 36]</li>
                 </ul>
             </section>
 
-            <section>
-                <h2><i class="fas fa-bullseye"></i> Hedefler</h2>
-                <p>Uygulamanın temel amacı, bir emlakçının günlük işlerini kolaylaştırmaktır. Temel fonksiyonlar şunlardır:</p>
+            <section class="content-section">
+                <h2><i class="fas fa-bullseye"></i> Proje Hedefleri (SMART)</h2>
+                <p>Projenin başarısını ölçmek adına aşağıdaki temel hedefler belirlenmiştir:</p>
                 <ul>
-                    <li>İlan ekleme, silme ve güncelleme.</li>
-                    <li>Müşteri kayıtlarını tutma.</li>
-                    <li>Satış ve kiralama işlemlerini raporlama.</li>
+                    <li><strong>Fonksiyonellik:</strong> Projenin ilk 2 ayı içerisinde; kullanıcı kayıt, ilan ekleme, gelişmiş arama ve dinamik filtreleme özelliklerini barındıran tam fonksiyonel bir veritabanı altyapısının %100 oranında tamamlanması [cite: 54-55].</li>
+                    <li><strong>Hız ve Performans:</strong> 10.000 kayıtlı ilan arasından yapılan sorgulamaların 2 saniyenin altında sonuç döndürecek şekilde optimize edilmesi[cite: 56].</li>
+                    <li><strong>Kullanıcı Deneyimi:</strong> Sistemin hem masaüstü hem de mobil cihazlarda sorunsuz çalışmasını sağlayacak duyarlı (responsive) bir arayüz tasarımının yapılarak, kullanılabilirlik testlerinden en az %80 başarı puanı alması[cite: 59].</li>
+                    <li><strong>Veri Güncelliği:</strong> 30 günü geçen ilanların otomatik olarak pasife alınması mekanizmasının sisteme entegre edilmesi[cite: 60].</li>
                 </ul>
             </section>
 
-            <section>
-                <h2><i class="fas fa-code"></i> Kullanılan Teknolojiler</h2>
-                <p>Projede aşağıdaki teknolojiler kullanılacaktır:</p>
+            <section class="content-section">
+                <h2><i class="fas fa-sitemap"></i> Mimari ve Altyapı Kararları</h2>
+                <p>Sistemin temel çalışma iskeleti kararlaştırılmıştır:</p>
                 <div class="tech-stack">
-                    <strong>Dil:</strong> Java (Swing Kütüphanesi)<br>
-                    <strong>Veritabanı:</strong> MySQL<br>
-                    <strong>IDE:</strong> IntelliJ IDEA / Eclipse
+                    <strong>Mimari Yaklaşım:</strong> MVC (Model-View-Controller) deseni kullanılacaktır[cite: 149].<br>
+                    <strong>Arayüz:</strong> Masaüstü ve mobil tarayıcılarla %100 uyumlu (responsive) olacaktır [cite: 94-95].<br>
+                    <strong>Güvenlik Standardı:</strong> Şifreler SHA-256 ile özetlenecek ve tüm trafik HTTPS üzerinden şifrelenecektir[cite: 101].
                 </div>
             </section>
         </article>
     </main>
 
-    <footer>
+    <footer class="detail-footer">
         <div class="container">
             <p>&copy; 2026 Yunus Emre Beyaz - Sistem Analizi ve Tasarımı</p>
         </div>

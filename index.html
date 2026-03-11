@@ -1,77 +1,276 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emlak Satış Otomasyonu - Haftalık Rapor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emlak Satış Otomasyonu — Dönem Proje Blogu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Sistem Analizi ve Tasarımı Dönem Projesi [cite: 3, 4]</h1>
-            <h2>Emlak Satış Otomasyonu </h2>
-            <div class="student-info">
-                <p><strong>Hazırlayan:</strong> YUNUS EMRE BEYAZ [cite: 6]</p>
-                <p><strong>Öğrenci Numarası:</strong> 248104047 [cite: 6]</p>
-                <p><strong>Akademik Dönem:</strong> 2025-2026 Bahar [cite: 6]</p>
-            </div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-icon">⌂</span>
+      <span>Emlak<b>Otomasyon</b></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Ana Sayfa</a>
+      <a href="hafta-1.html">Hafta 1</a>
+      <a href="hafta-2.html">Hafta 2</a>
+      <a href="hafta-3.html">Hafta 3</a>
+    </div>
+    <div class="nav-badge">2025-2026 Bahar</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="dot dot-green"></span>
+        Sistem Analizi ve Tasarımı · Dönem Projesi
+      </div>
+      <h1 class="hero-title">
+        Emlak Satış<br />
+        <span class="hero-title-accent">Otomasyonu</span>
+      </h1>
+      <p class="hero-sub">Gayrimenkul ilanlarının dijital ortamda yönetilmesini sağlayan, alıcı-satıcı iletişimini hızlandıran merkezi otomasyon platformu.</p>
+      <div class="hero-cta-row">
+        <a href="hafta-1.html" class="btn-primary">İlk Rapora Git →</a>
+        <a href="#raporlar" class="btn-ghost">Tüm Haftalar</a>
+      </div>
+    </div>
+    <div class="hero-card-float">
+      <div class="float-card">
+        <div class="fc-label">Proje Durumu</div>
+        <div class="fc-status"><span class="dot dot-yellow anim"></span> Devam Ediyor</div>
+        <div class="fc-divider"></div>
+        <div class="fc-row"><span>Hafta</span><span>3 / 8</span></div>
+        <div class="fc-row"><span>Tamamlanan</span><span class="fc-green">%37</span></div>
+        <div class="fc-bar-wrap"><div class="fc-bar" style="width:37%"></div></div>
+        <div class="fc-divider"></div>
+        <div class="fc-row"><span>Rapor Ver.</span><span>V1.0</span></div>
+        <div class="fc-row"><span>Teslim</span><span>10 Mart 2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="features-inner">
+      <div class="feat-card">
+        <div class="feat-icon">🏠</div>
+        <h3>İlan Yönetimi</h3>
+        <p>Fiyat, m², konum ve fotoğrafla detaylı ilan oluşturma ve güncelleme sistemi.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔍</div>
+        <h3>Gelişmiş Arama</h3>
+        <p>İl, ilçe, fiyat aralığı ve emlak tipine göre 2 saniye altı filtreleme motoru.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🛡️</div>
+        <h3>Admin Onay Paneli</h3>
+        <p>Sahte ilan kontrolü, yayın onayı ve kullanıcı yönetimi için denetim ekranı.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">⭐</div>
+        <h3>Favori & Takip</h3>
+        <p>Beğenilen ilanları kaydetme ve fiyat değişikliklerinde bildirim alma özelliği.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAFTALIK RAPORLAR -->
+  <section class="reports" id="raporlar">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">HAFTALIK RAPORLAR</span>
+        <h2 class="section-title">Proje Günlüğü</h2>
+      </div>
+
+      <div class="reports-grid">
+
+        <!-- Hafta 1 -->
+        <a href="hafta-1.html" class="report-card status-done">
+          <div class="rc-top">
+            <span class="rc-week">Hafta 01</span>
+            <span class="rc-badge done">✓ Tamamlandı</span>
+          </div>
+          <h3 class="rc-title">Proje Fikrinin Belirlenmesi ve Planlama</h3>
+          <p class="rc-desc">Proje kapsamı, problem tanımı, SMART hedefler ve paydaş analizi çalışmaları.</p>
+          <div class="rc-footer">
+            <span class="rc-date">10 Mart 2026</span>
+            <span class="rc-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Hafta 2 -->
+        <a href="hafta-2.html" class="report-card status-done">
+          <div class="rc-top">
+            <span class="rc-week">Hafta 02</span>
+            <span class="rc-badge done">✓ Tamamlandı</span>
+          </div>
+          <h3 class="rc-title">Gereksinim Toplama ve Paydaş Analizi</h3>
+          <p class="rc-desc">FR/NFR gereksinimler, paydaş tablosu ve birincil kullanıcı profili dokümantasyonu.</p>
+          <div class="rc-footer">
+            <span class="rc-date">17 Mart 2026</span>
+            <span class="rc-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Hafta 3 -->
+        <a href="hafta-3.html" class="report-card status-active">
+          <div class="rc-top">
+            <span class="rc-week">Hafta 03</span>
+            <span class="rc-badge active">● Devam Ediyor</span>
+          </div>
+          <h3 class="rc-title">Sistem Analizi ve UML Diyagramları</h3>
+          <p class="rc-desc">Use Case, aktivite diyagramı ve 3 kullanım senaryosunun hazırlanması.</p>
+          <div class="rc-footer">
+            <span class="rc-date">24 Mart 2026</span>
+            <span class="rc-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- Hafta 4 -->
+        <div class="report-card status-pending">
+          <div class="rc-top">
+            <span class="rc-week">Hafta 04</span>
+            <span class="rc-badge pending">Planlandı</span>
+          </div>
+          <h3 class="rc-title">Sistem Tasarımı ve Mimari</h3>
+          <p class="rc-desc">MVC mimarisi, Sınıf diyagramı, ER diyagramı ve Sekans diyagramı çalışmaları.</p>
+          <div class="rc-footer">
+            <span class="rc-date">31 Mart 2026</span>
+            <span class="rc-arrow rc-lock">⏳</span>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <section class="week-card">
-            <div class="week-header">
-                <h3>Hafta 1: Proje Fikrinin Belirlenmesi ve Planlama </h3>
-            </div>
-            <div class="week-content">
-                                <h4>Proje Özeti ve Amacı</h4>
-                <p>Projenin temel amacı, emlak ilanlarının dijital ortamda merkezi bir veritabanı ile yönetilmesini sağlamak; alıcı ve satıcı arasındaki iletişim sürecini hızlandırarak veri karmaşasını önlemektir[cite: 11, 12]. Geleneksel yöntemlerdeki ilan takibi zorluğu, güncel olmayan ilanların yarattığı zaman kaybı ve verilerin dağınık olması problemleri çözülerek güncel bilgiye hızlı erişim sağlanması hedeflenmektedir[cite: 13].</p>
-                
-                <h4>Problem Tanımı</h4>
-                <p>"Gayrimenkul danışmanları ve konut arayan kullanıcılar, ilanların manuel yöntemlerle veya dağınık platformlarla yönetilmesi nedeniyle veri güncelliğini takip edememe ve hızlı karar verememe problemi yaşamaktadır; bu durum zaman kaybına, hatalı fiyatlandırmalara ve ticari verimliliğin düşmesine yol açmaktadır."[cite: 36].</p>
+        <!-- Hafta 5 -->
+        <div class="report-card status-pending">
+          <div class="rc-top">
+            <span class="rc-week">Hafta 05</span>
+            <span class="rc-badge pending">Planlandı</span>
+          </div>
+          <h3 class="rc-title">Prototip / Wireframe Geliştirme</h3>
+          <p class="rc-desc">Ana sayfa, ilan detay ve yönetim paneli için 3 ekran wireframe tasarımı.</p>
+          <div class="rc-footer">
+            <span class="rc-date">7 Nisan 2026</span>
+            <span class="rc-arrow rc-lock">⏳</span>
+          </div>
+        </div>
 
-                <h4>Temel Hedefler</h4>
-                <ul>
-                    <li><strong>Fonksiyonellik:</strong> Kullanıcı kayıt, ilan ekleme, gelişmiş arama ve dinamik filtreleme özelliklerini barındıran veritabanı altyapısının tamamlanması[cite: 54, 55].</li>
-                    <li><strong>Hız ve Performans:</strong> Arama sorgulamalarının 2 saniyenin altında sonuç döndürecek şekilde optimize edilmesi[cite: 56].</li>
-                    <li><strong>Kullanıcı Deneyimi:</strong> Hem masaüstü hem de mobil cihazlarda sorunsuz çalışacak duyarlı (responsive) bir arayüz tasarımı yapılması[cite: 59].</li>
-                    <li><strong>Veri Güncelliği:</strong> 30 günü geçen ilanların otomatik olarak pasife alınması veya hatırlatma gönderilmesi[cite: 60].</li>
-                </ul>
-            </div>
-        </section>
+        <!-- Hafta 6 -->
+        <div class="report-card status-pending">
+          <div class="rc-top">
+            <span class="rc-week">Hafta 06</span>
+            <span class="rc-badge pending">Planlandı</span>
+          </div>
+          <h3 class="rc-title">Teknoloji Altyapısı Seçimi</h3>
+          <p class="rc-desc">Frontend, backend, veritabanı ve deploy araçlarının belirlenmesi ve gerekçeleri.</p>
+          <div class="rc-footer">
+            <span class="rc-date">14 Nisan 2026</span>
+            <span class="rc-arrow rc-lock">⏳</span>
+          </div>
+        </div>
 
-        <section class="week-card">
-            <div class="week-header">
-                <h3>Hafta 2: Gereksinim Toplama ve Paydaş Analizi </h3>
-            </div>
-            <div class="week-content">
-                                <h4>Paydaş Analizi</h4>
-                <p>Projenin temel paydaşları ve beklentileri şu şekilde belirlenmiştir:</p>
-                <ul>
-                    <li><strong>Gayrimenkul Danışmanları (Emlakçılar):</strong> İlanlarını kolayca yönetebilmek, portföy takibini hızlandırmak[cite: 66].</li>
-                    <li><strong>Bireysel Alıcı ve Kiracılar:</strong> Doğru ve güncel ilanlara hızlıca ulaşmak, gelişmiş filtreleme ile zaman kazanmak[cite: 66].</li>
-                    <li><strong>Sistem Yöneticisi (Admin):</strong> Sistemin sürekliliğini sağlamak ve ilan onay süreçlerini yönetmek[cite: 66].</li>
-                </ul>
+        <!-- Hafta 7 -->
+        <div class="report-card status-pending">
+          <div class="rc-top">
+            <span class="rc-week">Hafta 07</span>
+            <span class="rc-badge pending">Planlandı</span>
+          </div>
+          <h3 class="rc-title">Kodlama ve Test</h3>
+          <p class="rc-desc">Temel modüllerin kodlanması, birim testleri ve performans optimizasyonu.</p>
+          <div class="rc-footer">
+            <span class="rc-date">21 Nisan 2026</span>
+            <span class="rc-arrow rc-lock">⏳</span>
+          </div>
+        </div>
 
-                <h4>İşlevsel Gereksinimler (Sistem Ne Yapmalı?)</h4>
-                <ul>
-                    <li>Kullanıcılar e-posta ve şifre ile sisteme kayıt olabilmeli ve giriş yapabilmelidir[cite: 86, 98].</li>
-                    <li>Yetkili kullanıcılar (emlakçılar) fiyat, m², konum ve oda sayısı gibi detaylarla ilan oluşturabilmeli ve ilanlara 1-10 arası fotoğraf yükleyebilmelidir[cite: 87, 98].</li>
-                    <li>Kullanıcılar fiyat aralığına, oda sayısına ve lokasyona göre arama yapabilmelidir[cite: 88].</li>
-                    <li>Müşteriler ilgilendikleri ilanları "Favorilerim" listesine ekleyebilmelidir[cite: 89, 99].</li>
-                    <li>Girilen ilanlar sistem yöneticisi (admin) tarafından onaylanmadan yayına girmemelidir[cite: 90].</li>
-                </ul>
+        <!-- Hafta 8 -->
+        <div class="report-card status-pending">
+          <div class="rc-top">
+            <span class="rc-week">Hafta 08</span>
+            <span class="rc-badge pending">Planlandı</span>
+          </div>
+          <h3 class="rc-title">Sunum ve Final Raporu</h3>
+          <p class="rc-desc">Risk analizi, kaynakça, final raporu ve sınıf sunumunun hazırlanması.</p>
+          <div class="rc-footer">
+            <span class="rc-date">Mayıs 2026</span>
+            <span class="rc-arrow rc-lock">⏳</span>
+          </div>
+        </div>
 
-                <h4>İşlevsel Olmayan Gereksinimler (Sistem Nasıl Çalışmalı?)</h4>
-                <ul>
-                    <li><strong>Performans:</strong> Arama sonuçları ortalama 2 saniyenin altında yüklenmelidir[cite: 92, 101].</li>
-                    <li><strong>Güvenlik:</strong> Kullanıcı şifreleri veritabanında "hashing" (SHA-256) yöntemiyle tutulmalı ve tüm trafik HTTPS üzerinden şifrelenmelidir[cite: 93, 101].</li>
-                    <li><strong>Erişilebilirlik:</strong> Arayüz, mobil cihazlarla %100 uyumlu (responsive) olmalıdır[cite: 94, 95, 102].</li>
-                    <li><strong>Veri Bütünlüğü:</strong> Bir ilan silindiğinde fotoğrafları da otomatik olarak temizlenmelidir[cite: 96].</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">ALTYAPI</span>
+        <h2 class="section-title">Teknoloji Yığını</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-pill"><span>🗄️</span> Veritabanı (MySQL / PostgreSQL)</div>
+        <div class="tech-pill"><span>🖥️</span> MVC Mimarisi</div>
+        <div class="tech-pill"><span>🔒</span> SHA-256 Güvenlik</div>
+        <div class="tech-pill"><span>📱</span> Responsive Arayüz</div>
+        <div class="tech-pill"><span>🔗</span> RESTful API</div>
+        <div class="tech-pill"><span>⚡</span> &lt;2 sn Arama Motoru</div>
+        <div class="tech-pill"><span>🛠️</span> HTTPS / SSL</div>
+        <div class="tech-pill"><span>📦</span> Git Versiyon Kontrolü</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT INFO -->
+  <section class="info-section">
+    <div class="section-inner">
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Proje Detayları</h3>
+          <div class="info-row"><span>Hazırlayan</span><b>Yunus Emre Beyaz</b></div>
+          <div class="info-row"><span>Öğrenci No</span><b>248104047</b></div>
+          <div class="info-row"><span>Danışman</span><b>Alper Kahraman</b></div>
+          <div class="info-row"><span>Kurum</span><b>Hassa Meslek YO</b></div>
+          <div class="info-row"><span>Bölüm</span><b>Bilgisayar Programcılığı</b></div>
+          <div class="info-row"><span>Dönem</span><b>2025-2026 Bahar</b></div>
+        </div>
+        <div class="info-card">
+          <h3>Kapsam İçi Özellikler</h3>
+          <div class="scope-list">
+            <div class="scope-item">✓ Kullanıcı Yetkilendirme ve Rol Yönetimi</div>
+            <div class="scope-item">✓ Dinamik İlan Yönetim Sistemi</div>
+            <div class="scope-item">✓ Gelişmiş Filtreleme ve Arama Motoru</div>
+            <div class="scope-item">✓ Favori ve Takip Sistemi</div>
+            <div class="scope-item">✓ Yönetici Denetim Paneli</div>
+          </div>
+          <h3 style="margin-top:20px">Kapsam Dışı</h3>
+          <div class="scope-list">
+            <div class="scope-item out">✗ Online Ödeme Entegrasyonu</div>
+            <div class="scope-item out">✗ Canlı Video / Sanal Tur</div>
+            <div class="scope-item out">✗ Tapu/Resmi Belge Onayı</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">⌂ Emlak Satış Otomasyonu</div>
+      <div class="footer-center">Hassa Meslek Yüksekokulu · Bilgisayar Programcılığı · 2025-2026</div>
+      <div class="footer-right">Yunus Emre Beyaz</div>
+    </div>
+  </footer>
+
 </body>
 </html>
